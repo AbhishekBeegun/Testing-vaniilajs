@@ -4,9 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+    #quotes {
+        display: flex; 
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .quote-card{
+        display: flex; 
+        flex-direction: column;
+        justify-content: space-around;
+     padding: 20px;
+     width: 200px;
+     text-align: center;
+     border : solid 2px black
+    }
+
+    </style>
 </head>
 <body>
-<div>
+<!-- project 1 random quote generator -->
+<div id="quotes">
+
+</div>
+<template id="randomquotetemplate">
+    <div class="quote-card">
+        <p class="quote-desc"></p>
+        <p class="quote-author"></p>
+        <button>Next Quote</button>
+    </div>
+</template>
+
+
+<!-- project 1 random quote generator -->
+
+
+
+
+
+<!-- <div>
    <button  class="btn-1" onclick="alert('button 1 click')">
     Button 1
    </button>
@@ -16,13 +55,13 @@
    <button  class="btn-3">
     Button 3
    </button>
-</div>
-    <template id="movieTemplate">
+</div> -->
+    <!-- <template id="movieTemplate">
         <div class="movie" style="display: flex;">
             <img src="" alt="Movie Image">
             <p></p>
         </div>
-    </template>
+    </template> -->
     
 </body>
 <script src="./index.js">
