@@ -52,3 +52,25 @@ function renderMovies() {
 renderMovies();
 
 
+const btn2 = document.querySelector('.btn-2')
+
+console.log(btn2)
+
+function alertbtn2 () {
+    alert('btn-2 clicked')
+}
+
+btn2.addEventListener("click" , alertbtn2)
+
+const btn3 = document.querySelector('.btn-3')
+
+function changeColor () {
+    btn3.style.backgroundColor = "red"
+    btn3.style.scale = "1.2"
+}
+function changebtn2(){
+    btn2.style.backgroundColor = "green"
+}
+
+btn3.addEventListener("mouseover" , changeColor)
+btn3.addEventListener("click", changebtn2)
